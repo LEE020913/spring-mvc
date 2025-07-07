@@ -18,6 +18,8 @@ public class HelloViewController {
     @GetMapping("/html/templates")
     public String htmlTemplates() {
         // ... 내부 로직이 추가 될 수 있음
+        // prefix classpath: resources까지의 경로 + tempates/ 까지 가지고있음
+        // suffix .html
         return "hello-template";
     }
 }
